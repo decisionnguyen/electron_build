@@ -28,7 +28,8 @@
       "main.js"
     ],
     "win": {
-      "target": ["msi"]
+      "target": ["msi"],
+      "icon": "build/icon.ico"
     },
     "mac": {
       "target": "dmg"
