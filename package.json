@@ -28,7 +28,7 @@
       "main.js"
     ],
     "win": {
-      "target": ["msi"],
+      "target": ["nsis"],
       "icon": "build/icon.ico"
     },
     "mac": {
