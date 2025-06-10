@@ -1,0 +1,36 @@
+{
+  "name": "electron_build",
+  "version": "1.0.0",
+  "main": "main.js",
+  "author": "TDM",
+  "license": "MIT",
+  "scripts": {
+    "build:win": "electron-builder --win",
+    "build:mac": "electron-builder --macos"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "electron": "36.2.1",
+    "electron-builder": "26.0.12"
+  },
+  "build": {
+    "icon": "build/icon",
+    "appId": "vn.tdm.kiosk",
+    "productName": "TDM Kiosk",
+    "directories": {
+      "buildResources": "assets",
+      "output": "release"
+    },
+    "files": [
+      "dist/**/*",
+      "main.js"
+    ],
+    "win": {
+      "target": ["msi"]
+    },
+    "mac": {
+      "target": "dmg"
+    }
+  }
+}
