@@ -5,6 +5,7 @@
   "author": "TDM",
   "license": "MIT",
   "scripts": {
+    "build": "electron-builder",
     "build:win": "electron-builder --win",
     "build:mac": "electron-builder --macos"
   },
